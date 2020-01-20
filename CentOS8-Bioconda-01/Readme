@@ -1,0 +1,3 @@
+# Command to run:
+
+`docker -it sgivan/centos8-bioconda-01`
