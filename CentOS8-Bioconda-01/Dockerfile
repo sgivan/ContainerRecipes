@@ -7,5 +7,5 @@ RUN source /root/.bashrc
 RUN /root/miniconda3/bin/conda config --add channels defaults
 RUN /root/miniconda3/bin/conda config --add channels bioconda
 RUN /root/miniconda3/bin/conda config --add channels conda-forge
-RUN /root/miniconda3/bin/conda create -n rnaseq star samtools bioconductor-edger bioconductor-deseq2 kallisto salmon rsem bioconductor-tximport snakemake
-RUN /root/miniconda3/bin/conda create -n aligners bowtie bowtie2 bwa samtools
+#RUN /root/miniconda3/bin/conda create -n rnaseq star samtools bioconductor-edger bioconductor-deseq2 kallisto salmon rsem bioconductor-tximport snakemake
+#RUN /root/miniconda3/bin/conda create -n aligners bowtie bowtie2 bwa samtools
