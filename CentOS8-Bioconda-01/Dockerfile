@@ -10,3 +10,6 @@ RUN /root/miniconda3/bin/conda config --add channels conda-forge
 RUN /root/miniconda3/bin/conda create -n rnaseq star samtools bioconductor-edger bioconductor-deseq2 kallisto salmon rsem bioconductor-tximport snakemake
 RUN /root/miniconda3/bin/conda install -n rnaseq --freeze-installed snakemake
 RUN /root/miniconda3/bin/conda create -n aligners bowtie bowtie2 bwa samtools
+ENV LC_CTYPE="c.utf8"
+ENV LC_MESSAGES="c.utf8"
+ENV LC_COLLATE="c.utf8"
