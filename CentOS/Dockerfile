@@ -1,2 +1,2 @@
-FROM centos:7.7.1908
+FROM centos
 RUN yum install -y vim
