@@ -7,3 +7,5 @@ RUN dnf groupinstall -y 'Development Tools'
 RUN git clone https://github.com/10XGenomics/bamtofastq.git
 WORKDIR bamtofastq
 RUN cargo build --release
+ENV PATH=/bamtofastq/target/release:$PATH
+
